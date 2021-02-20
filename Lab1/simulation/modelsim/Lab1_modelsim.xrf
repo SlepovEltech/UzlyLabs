@@ -1,7 +1,7 @@
 vendor_name = ModelSim
-source_file = 1, //Mac/Home/Desktop/Lab1/Lab1.bdf
-source_file = 1, //Mac/Home/Desktop/Lab1/Lab1.vwf
-source_file = 1, //Mac/Home/Desktop/Lab1/db/Lab1.cbx.xml
+source_file = 1, C:/Users/sa_sa/Documents/GitHub/UzlyLabs/Lab1/Lab1.bdf
+source_file = 1, C:/Users/sa_sa/Documents/GitHub/UzlyLabs/Lab1/Lab1.vwf
+source_file = 1, C:/Users/sa_sa/Documents/GitHub/UzlyLabs/Lab1/db/Lab1.cbx.xml
 design_name = Lab1
 instance = comp, \x2~I , x2, Lab1, 1
 instance = comp, \x4~I , x4, Lab1, 1
