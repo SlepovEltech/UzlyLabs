@@ -97,7 +97,12 @@ TRANSITION_LIST("x1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 40;
+			LEVEL 0 FOR 12.5;
+			LEVEL 1 FOR 12.5;
+		}
 	}
 }
 
@@ -106,7 +111,12 @@ TRANSITION_LIST("x2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 20;
+			LEVEL 0 FOR 25.0;
+			LEVEL 1 FOR 25.0;
+		}
 	}
 }
 
@@ -115,7 +125,12 @@ TRANSITION_LIST("x3")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 10;
+			LEVEL 0 FOR 50.0;
+			LEVEL 1 FOR 50.0;
+		}
 	}
 }
 
@@ -124,7 +139,12 @@ TRANSITION_LIST("x4")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 5;
+			LEVEL 0 FOR 100.0;
+			LEVEL 1 FOR 100.0;
+		}
 	}
 }
 
@@ -133,7 +153,30 @@ TRANSITION_LIST("Y1")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 4;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 12.5;
+				LEVEL 0 FOR 12.5;
+			}
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 12.5;
+			LEVEL 1 FOR 12.5;
+			LEVEL 0 FOR 75.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 12.5;
+			LEVEL 0 FOR 12.5;
+		}
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 75.0;
 	}
 }
 
@@ -142,7 +185,30 @@ TRANSITION_LIST("Y2")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		NODE
+		{
+			REPEAT = 4;
+			NODE
+			{
+				REPEAT = 2;
+				LEVEL 1 FOR 12.5;
+				LEVEL 0 FOR 12.5;
+			}
+			LEVEL 1 FOR 50.0;
+			LEVEL 0 FOR 12.5;
+			LEVEL 1 FOR 12.5;
+			LEVEL 0 FOR 75.0;
+		}
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 1 FOR 12.5;
+			LEVEL 0 FOR 12.5;
+		}
+		LEVEL 1 FOR 50.0;
+		LEVEL 0 FOR 12.5;
+		LEVEL 1 FOR 12.5;
+		LEVEL 0 FOR 75.0;
 	}
 }
 

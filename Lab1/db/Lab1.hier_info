@@ -2,12 +2,21 @@
 Y1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
 x1 => inst4.IN0
 x1 => inst3.IN0
+x1 => inst16.IN0
+x1 => inst31.IN1
 x4 => inst4.IN1
 x4 => inst2.IN0
 x4 => inst3.IN1
+x4 => inst27.IN2
+x4 => inst25.IN0
+x4 => inst29.IN0
+x4 => inst13.IN0
 x3 => inst5.IN0
 x3 => inst1.IN0
+x3 => inst27.IN1
+x3 => inst20.IN0
 x2 => inst.IN0
-Y2 <= <GND>
+x2 => inst14.IN0
+Y2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
 
 
