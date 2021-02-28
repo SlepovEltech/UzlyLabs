@@ -1,0 +1,333 @@
+|Lab2
+Y1 <= Lab1:inst.Y1
+X[1] => Lab1:inst.x1
+X[1] => lpm_mux0:inst3.sel[0]
+X[1] => lpm_decode3:inst11.data[0]
+X[2] => Lab1:inst.x2
+X[2] => lpm_mux0:inst3.sel[1]
+X[2] => lpm_decode3:inst11.data[1]
+X[3] => Lab1:inst.x3
+X[3] => lpm_mux0:inst3.sel[2]
+X[3] => lpm_decode3:inst11.data[2]
+X[4] => Lab1:inst.x4
+X[4] => lpm_mux0:inst3.sel[3]
+X[4] => lpm_decode3:inst11.data[3]
+Y2 <= lpm_mux0:inst3.result
+Y3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Lab2|Lab1:inst
+Y1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+x1 => inst4.IN0
+x1 => inst3.IN0
+x4 => inst4.IN1
+x4 => inst2.IN0
+x4 => inst3.IN1
+x3 => inst5.IN0
+x3 => inst1.IN0
+x2 => inst.IN0
+
+
+|Lab2|lpm_mux0:inst3
+data0 => LPM_MUX:LPM_MUX_component.DATA[0][0]
+data1 => LPM_MUX:LPM_MUX_component.DATA[1][0]
+data10 => LPM_MUX:LPM_MUX_component.DATA[10][0]
+data11 => LPM_MUX:LPM_MUX_component.DATA[11][0]
+data12 => LPM_MUX:LPM_MUX_component.DATA[12][0]
+data13 => LPM_MUX:LPM_MUX_component.DATA[13][0]
+data14 => LPM_MUX:LPM_MUX_component.DATA[14][0]
+data15 => LPM_MUX:LPM_MUX_component.DATA[15][0]
+data2 => LPM_MUX:LPM_MUX_component.DATA[2][0]
+data3 => LPM_MUX:LPM_MUX_component.DATA[3][0]
+data4 => LPM_MUX:LPM_MUX_component.DATA[4][0]
+data5 => LPM_MUX:LPM_MUX_component.DATA[5][0]
+data6 => LPM_MUX:LPM_MUX_component.DATA[6][0]
+data7 => LPM_MUX:LPM_MUX_component.DATA[7][0]
+data8 => LPM_MUX:LPM_MUX_component.DATA[8][0]
+data9 => LPM_MUX:LPM_MUX_component.DATA[9][0]
+sel[0] => LPM_MUX:LPM_MUX_component.SEL[0]
+sel[1] => LPM_MUX:LPM_MUX_component.SEL[1]
+sel[2] => LPM_MUX:LPM_MUX_component.SEL[2]
+sel[3] => LPM_MUX:LPM_MUX_component.SEL[3]
+result <= LPM_MUX:LPM_MUX_component.RESULT[0]
+
+
+|Lab2|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component
+data[0][0] => mux_o4e:auto_generated.data[0]
+data[1][0] => mux_o4e:auto_generated.data[1]
+data[2][0] => mux_o4e:auto_generated.data[2]
+data[3][0] => mux_o4e:auto_generated.data[3]
+data[4][0] => mux_o4e:auto_generated.data[4]
+data[5][0] => mux_o4e:auto_generated.data[5]
+data[6][0] => mux_o4e:auto_generated.data[6]
+data[7][0] => mux_o4e:auto_generated.data[7]
+data[8][0] => mux_o4e:auto_generated.data[8]
+data[9][0] => mux_o4e:auto_generated.data[9]
+data[10][0] => mux_o4e:auto_generated.data[10]
+data[11][0] => mux_o4e:auto_generated.data[11]
+data[12][0] => mux_o4e:auto_generated.data[12]
+data[13][0] => mux_o4e:auto_generated.data[13]
+data[14][0] => mux_o4e:auto_generated.data[14]
+data[15][0] => mux_o4e:auto_generated.data[15]
+sel[0] => mux_o4e:auto_generated.sel[0]
+sel[1] => mux_o4e:auto_generated.sel[1]
+sel[2] => mux_o4e:auto_generated.sel[2]
+sel[3] => mux_o4e:auto_generated.sel[3]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_o4e:auto_generated.result[0]
+
+
+|Lab2|lpm_mux0:inst3|LPM_MUX:LPM_MUX_component|mux_o4e:auto_generated
+data[0] => _~24.IN0
+data[0] => _~33.IN0
+data[0] => _~74.IN0
+data[0] => _~83.IN0
+data[1] => _~22.IN0
+data[1] => _~72.IN0
+data[2] => _~27.IN1
+data[2] => _~36.IN1
+data[2] => _~77.IN1
+data[2] => _~86.IN1
+data[3] => _~40.IN0
+data[3] => _~90.IN0
+data[4] => _~2.IN0
+data[4] => _~11.IN0
+data[5] => _~0.IN0
+data[6] => _~5.IN1
+data[6] => _~14.IN1
+data[7] => _~18.IN0
+data[8] => _~49.IN0
+data[8] => _~58.IN0
+data[8] => _~99.IN0
+data[8] => _~108.IN0
+data[9] => _~47.IN0
+data[9] => _~97.IN0
+data[10] => _~52.IN1
+data[10] => _~61.IN1
+data[10] => _~102.IN1
+data[10] => _~111.IN1
+data[11] => _~65.IN0
+data[11] => _~115.IN0
+data[12] => _~123.IN0
+data[12] => _~132.IN0
+data[13] => _~121.IN0
+data[14] => _~126.IN1
+data[14] => _~135.IN1
+data[15] => _~139.IN0
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => _~0.IN1
+sel[0] => _~3.IN0
+sel[0] => _~5.IN0
+sel[0] => _~12.IN0
+sel[0] => _~14.IN0
+sel[0] => _~17.IN0
+sel[0] => _~22.IN1
+sel[0] => _~25.IN0
+sel[0] => _~27.IN0
+sel[0] => _~34.IN0
+sel[0] => _~36.IN0
+sel[0] => _~39.IN0
+sel[0] => _~47.IN1
+sel[0] => _~50.IN0
+sel[0] => _~52.IN0
+sel[0] => _~59.IN0
+sel[0] => _~61.IN0
+sel[0] => _~64.IN0
+sel[0] => _~72.IN1
+sel[0] => _~75.IN0
+sel[0] => _~77.IN0
+sel[0] => _~84.IN0
+sel[0] => _~86.IN0
+sel[0] => _~89.IN0
+sel[0] => _~97.IN1
+sel[0] => _~100.IN0
+sel[0] => _~102.IN0
+sel[0] => _~109.IN0
+sel[0] => _~111.IN0
+sel[0] => _~114.IN0
+sel[0] => _~121.IN1
+sel[0] => _~124.IN0
+sel[0] => _~126.IN0
+sel[0] => _~133.IN0
+sel[0] => _~135.IN0
+sel[0] => _~138.IN0
+sel[1] => _~1.IN0
+sel[1] => _~6.IN0
+sel[1] => _~10.IN0
+sel[1] => _~15.IN0
+sel[1] => _~23.IN0
+sel[1] => _~28.IN0
+sel[1] => _~32.IN0
+sel[1] => _~37.IN0
+sel[1] => _~48.IN0
+sel[1] => _~53.IN0
+sel[1] => _~57.IN0
+sel[1] => _~62.IN0
+sel[1] => _~73.IN0
+sel[1] => _~78.IN0
+sel[1] => _~82.IN0
+sel[1] => _~87.IN0
+sel[1] => _~98.IN0
+sel[1] => _~103.IN0
+sel[1] => _~107.IN0
+sel[1] => _~112.IN0
+sel[1] => _~122.IN0
+sel[1] => _~127.IN0
+sel[1] => _~131.IN0
+sel[1] => _~136.IN0
+sel[2] => _~21.IN1
+sel[2] => _~45.IN0
+sel[2] => _~68.IN0
+sel[2] => _~95.IN0
+sel[2] => _~118.IN0
+sel[2] => _~142.IN0
+sel[3] => _~43.IN0
+sel[3] => _~69.IN0
+sel[3] => _~93.IN0
+sel[3] => _~119.IN0
+
+
+|Lab2|lpm_constant5:inst1
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+
+
+|Lab2|lpm_constant5:inst1|lpm_constant:LPM_CONSTANT_component
+result[0] <= <GND>
+
+
+|Lab2|lpm_constant0:inst2
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+
+
+|Lab2|lpm_constant0:inst2|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+
+
+|Lab2|lpm_decode3:inst11
+data[0] => lpm_decode:LPM_DECODE_component.data[0]
+data[1] => lpm_decode:LPM_DECODE_component.data[1]
+data[2] => lpm_decode:LPM_DECODE_component.data[2]
+data[3] => lpm_decode:LPM_DECODE_component.data[3]
+eq0 <= lpm_decode:LPM_DECODE_component.eq[0]
+eq1 <= lpm_decode:LPM_DECODE_component.eq[1]
+eq10 <= lpm_decode:LPM_DECODE_component.eq[10]
+eq11 <= lpm_decode:LPM_DECODE_component.eq[11]
+eq12 <= lpm_decode:LPM_DECODE_component.eq[12]
+eq13 <= lpm_decode:LPM_DECODE_component.eq[13]
+eq14 <= lpm_decode:LPM_DECODE_component.eq[14]
+eq15 <= lpm_decode:LPM_DECODE_component.eq[15]
+eq2 <= lpm_decode:LPM_DECODE_component.eq[2]
+eq3 <= lpm_decode:LPM_DECODE_component.eq[3]
+eq4 <= lpm_decode:LPM_DECODE_component.eq[4]
+eq5 <= lpm_decode:LPM_DECODE_component.eq[5]
+eq6 <= lpm_decode:LPM_DECODE_component.eq[6]
+eq7 <= lpm_decode:LPM_DECODE_component.eq[7]
+eq8 <= lpm_decode:LPM_DECODE_component.eq[8]
+eq9 <= lpm_decode:LPM_DECODE_component.eq[9]
+
+
+|Lab2|lpm_decode3:inst11|lpm_decode:LPM_DECODE_component
+data[0] => decode_c8f:auto_generated.data[0]
+data[1] => decode_c8f:auto_generated.data[1]
+data[2] => decode_c8f:auto_generated.data[2]
+data[3] => decode_c8f:auto_generated.data[3]
+enable => ~NO_FANOUT~
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+eq[0] <= decode_c8f:auto_generated.eq[0]
+eq[1] <= decode_c8f:auto_generated.eq[1]
+eq[2] <= decode_c8f:auto_generated.eq[2]
+eq[3] <= decode_c8f:auto_generated.eq[3]
+eq[4] <= decode_c8f:auto_generated.eq[4]
+eq[5] <= decode_c8f:auto_generated.eq[5]
+eq[6] <= decode_c8f:auto_generated.eq[6]
+eq[7] <= decode_c8f:auto_generated.eq[7]
+eq[8] <= decode_c8f:auto_generated.eq[8]
+eq[9] <= decode_c8f:auto_generated.eq[9]
+eq[10] <= decode_c8f:auto_generated.eq[10]
+eq[11] <= decode_c8f:auto_generated.eq[11]
+eq[12] <= decode_c8f:auto_generated.eq[12]
+eq[13] <= decode_c8f:auto_generated.eq[13]
+eq[14] <= decode_c8f:auto_generated.eq[14]
+eq[15] <= decode_c8f:auto_generated.eq[15]
+
+
+|Lab2|lpm_decode3:inst11|lpm_decode:LPM_DECODE_component|decode_c8f:auto_generated
+data[0] => w_anode102w[1].IN1
+data[0] => w_anode112w[1]~1.IN0
+data[0] => w_anode122w[1].IN1
+data[0] => w_anode132w[1]~1.IN0
+data[0] => w_anode142w[1].IN1
+data[0] => w_anode152w[1]~0.IN0
+data[0] => w_anode162w[1].IN1
+data[0] => w_anode21w[1].IN1
+data[0] => w_anode31w[1]~1.IN0
+data[0] => w_anode41w[1].IN1
+data[0] => w_anode4w[1]~2.IN0
+data[0] => w_anode51w[1]~1.IN0
+data[0] => w_anode61w[1].IN1
+data[0] => w_anode71w[1]~0.IN0
+data[0] => w_anode81w[1].IN1
+data[0] => w_anode91w[1]~2.IN0
+data[1] => w_anode102w[2]~1.IN0
+data[1] => w_anode112w[2].IN1
+data[1] => w_anode122w[2].IN1
+data[1] => w_anode132w[2]~0.IN0
+data[1] => w_anode142w[2]~0.IN0
+data[1] => w_anode152w[2].IN1
+data[1] => w_anode162w[2].IN1
+data[1] => w_anode21w[2]~1.IN0
+data[1] => w_anode31w[2].IN1
+data[1] => w_anode41w[2].IN1
+data[1] => w_anode4w[2]~1.IN0
+data[1] => w_anode51w[2]~0.IN0
+data[1] => w_anode61w[2]~0.IN0
+data[1] => w_anode71w[2].IN1
+data[1] => w_anode81w[2].IN1
+data[1] => w_anode91w[2]~1.IN0
+data[2] => w_anode102w[3]~0.IN0
+data[2] => w_anode112w[3]~0.IN0
+data[2] => w_anode122w[3]~0.IN0
+data[2] => w_anode132w[3].IN1
+data[2] => w_anode142w[3].IN1
+data[2] => w_anode152w[3].IN1
+data[2] => w_anode162w[3].IN1
+data[2] => w_anode21w[3]~0.IN0
+data[2] => w_anode31w[3]~0.IN0
+data[2] => w_anode41w[3]~0.IN0
+data[2] => w_anode4w[3]~0.IN0
+data[2] => w_anode51w[3].IN1
+data[2] => w_anode61w[3].IN1
+data[2] => w_anode71w[3].IN1
+data[2] => w_anode81w[3].IN1
+data[2] => w_anode91w[3]~0.IN0
+data[3] => enable_wire1.IN0
+data[3] => w_anode102w[1].IN0
+data[3] => w_anode112w[1].IN0
+data[3] => w_anode122w[1].IN0
+data[3] => w_anode132w[1].IN0
+data[3] => w_anode142w[1].IN0
+data[3] => w_anode152w[1].IN0
+data[3] => w_anode162w[1].IN0
+data[3] => w_anode91w[1].IN0
+eq[0] <= w_anode4w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[1] <= w_anode21w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[2] <= w_anode31w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[3] <= w_anode41w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[4] <= w_anode51w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[5] <= w_anode61w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[6] <= w_anode71w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[7] <= w_anode81w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[8] <= w_anode91w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[9] <= w_anode102w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[10] <= w_anode112w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[11] <= w_anode122w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[12] <= w_anode132w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[13] <= w_anode142w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[14] <= w_anode152w[3].DB_MAX_OUTPUT_PORT_TYPE
+eq[15] <= w_anode162w[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
