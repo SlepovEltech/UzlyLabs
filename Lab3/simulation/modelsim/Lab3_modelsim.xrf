@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, Z:/GitHub/UzlyLabs/Lab3/Lab3.bdf
+source_file = 1, Z:/GitHub/UzlyLabs/Lab3/Lab3.vwf
+source_file = 1, Z:/GitHub/UzlyLabs/Lab3/db/Lab3.cbx.xml
+design_name = Lab3
+instance = comp, \x4~I , x4, Lab3, 1
+instance = comp, \x3~I , x3, Lab3, 1
+instance = comp, \inst8~0 , inst8~0, Lab3, 1
+instance = comp, \x2~I , x2, Lab3, 1
+instance = comp, \inst7~0 , inst7~0, Lab3, 1
+instance = comp, \x1~I , x1, Lab3, 1
+instance = comp, \inst6~0 , inst6~0, Lab3, 1
+instance = comp, \y4~I , y4, Lab3, 1
+instance = comp, \y3~I , y3, Lab3, 1
+instance = comp, \y2~I , y2, Lab3, 1
+instance = comp, \y1~I , y1, Lab3, 1
