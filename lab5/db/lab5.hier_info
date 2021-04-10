@@ -1,0 +1,23 @@
+|lab5
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x1 => inst.DATAIN
+clk => inst.CLK
+clk => inst1.CLK
+clk => inst2.CLK
+clk => inst3.CLK
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x2 => inst1.DATAIN
+Q3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x3 => inst2.DATAIN
+Q4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x4 => inst3.DATAIN
+
+
+|lab5|lpm_constant0:inst4
+result[0] <= lpm_constant:LPM_CONSTANT_component.result[0]
+
+
+|lab5|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component
+result[0] <= <VCC>
+
+
