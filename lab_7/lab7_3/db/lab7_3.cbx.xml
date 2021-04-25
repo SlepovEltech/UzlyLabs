@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab7_3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab7_3|lpm_mux0:inst10|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_o4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab7_3|lpm_mux0:inst41|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_o4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab7_3|lpm_mux0:inst4|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_o4e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lab7_3|lpm_mux0:inst512|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_o4e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

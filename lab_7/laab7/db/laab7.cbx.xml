@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="laab7">
+		<CBX_INST_ENTRY INSTANCE_NAME="|laab7|lpm_constant0:inst4|lpm_constant:LPM_CONSTANT_component" CBX_FILE_NAME="lpm_constant_be6.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laab7|lpm_counter0:inst|lpm_counter:LPM_COUNTER_component" CBX_FILE_NAME="cntr_5ki.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laab7|lpm_decode0:inst2|lpm_decode:LPM_DECODE_component" CBX_FILE_NAME="decode_c8f.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

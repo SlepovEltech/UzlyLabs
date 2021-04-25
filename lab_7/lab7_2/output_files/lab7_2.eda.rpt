@@ -1,0 +1,59 @@
+EDA Netlist Writer report for lab7_2
+Sun Apr 25 12:46:05 2021
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Sun Apr 25 12:46:05 2021 ;
+; Revision Name             ; lab7_2                                ;
+; Top-level Entity Name     ; lab7_2                                ;
+; Family                    ; Cyclone II                            ;
++---------------------------+---------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Apr 25 12:46:04 2021
+Info: Command: quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog lab7_2 -c lab7_2 --vector_source=//Mac/Home/Desktop/lab7_2/lab7_2.vwf --testbench_file=//Mac/Home/Desktop/lab7_2/simulation/modelsim/lab7_2.vwf.vt
+Info (201000): Generated Verilog Test Bench File //Mac/Home/Desktop/lab7_2/simulation/modelsim/lab7_2.vwf.vt for simulation
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 320 megabytes
+    Info: Processing ended: Sun Apr 25 12:46:05 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

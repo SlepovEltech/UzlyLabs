@@ -1,9 +1,9 @@
 vendor_name = ModelSim
-source_file = 1, //Mac/Home/Desktop/lab5/lpm_constant0.qip
-source_file = 1, //Mac/Home/Desktop/lab5/lpm_constant0.vhd
-source_file = 1, //Mac/Home/Desktop/lab5/lab5.bdf
-source_file = 1, //Mac/Home/Desktop/lab5/lab5.vwf
-source_file = 1, //Mac/Home/Desktop/lab5/db/lab5.cbx.xml
+source_file = 1, Z:/GitHub/UzlyLabs/lab5/lpm_constant0.qip
+source_file = 1, Z:/GitHub/UzlyLabs/lab5/lpm_constant0.vhd
+source_file = 1, Z:/GitHub/UzlyLabs/lab5/lab5.bdf
+source_file = 1, Z:/GitHub/UzlyLabs/lab5/lab5.vwf
+source_file = 1, Z:/GitHub/UzlyLabs/lab5/db/lab5.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd

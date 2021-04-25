@@ -1,5 +1,5 @@
 Simulator report for lab5_2
-Sun Apr 11 10:21:53 2021
+Sun Apr 18 16:09:30 2021
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,11 +45,12 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
-; Simulation Netlist Size     ; 42 nodes     ;
-; Simulation Coverage         ;      85.71 % ;
-; Total Number of Transitions ; 399          ;
+; Simulation Netlist Size     ; 23 nodes     ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 178          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5Q208C8  ;
 +-----------------------------+--------------+
 
 
@@ -58,7 +59,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------------+----------------------------------------+---------------+
 ; Option                                                                                     ; Setting                                ; Default Value ;
 +--------------------------------------------------------------------------------------------+----------------------------------------+---------------+
-; Simulation mode                                                                            ; Functional                             ; Timing        ;
+; Simulation mode                                                                            ; Timing                                 ; Timing        ;
 ; Start time                                                                                 ; 0 ns                                   ; 0 ns          ;
 ; Simulation results format                                                                  ; VWF                                    ;               ;
 ; Vector input source                                                                        ; Z:/GitHub/UzlyLabs/lab5_2/Waveform.vwf ;               ;
@@ -94,13 +95,13 @@ Please use Quartus II 32-bit to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      85.71 % ;
-; Total nodes checked                                 ; 42           ;
-; Total output ports checked                          ; 42           ;
-; Total output ports with complete 1/0-value coverage ; 36           ;
-; Total output ports with no 1/0-value coverage       ; 6            ;
-; Total output ports with no 1-value coverage         ; 6            ;
-; Total output ports with no 0-value coverage         ; 6            ;
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 23           ;
+; Total output ports checked                          ; 23           ;
+; Total output ports with complete 1/0-value coverage ; 23           ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
 +-----------------------------------------------------+--------------+
 
 
@@ -110,73 +111,46 @@ The following table displays output ports that toggle between 1 and 0 during sim
 +------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
 ; Node Name                                                                                ; Output Port Name                                                                         ; Output Port Type ;
 +------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
-; |lab5_2|Q0                                                                               ; |lab5_2|Q0                                                                               ; pin_out          ;
 ; |lab5_2|inst2                                                                            ; |lab5_2|inst2                                                                            ; regout           ;
-; |lab5_2|clk                                                                              ; |lab5_2|clk                                                                              ; out              ;
-; |lab5_2|Q1                                                                               ; |lab5_2|Q1                                                                               ; pin_out          ;
 ; |lab5_2|inst3                                                                            ; |lab5_2|inst3                                                                            ; regout           ;
-; |lab5_2|Q2                                                                               ; |lab5_2|Q2                                                                               ; pin_out          ;
 ; |lab5_2|inst4                                                                            ; |lab5_2|inst4                                                                            ; regout           ;
-; |lab5_2|Q3                                                                               ; |lab5_2|Q3                                                                               ; pin_out          ;
 ; |lab5_2|inst5                                                                            ; |lab5_2|inst5                                                                            ; regout           ;
-; |lab5_2|D3                                                                               ; |lab5_2|D3                                                                               ; out              ;
-; |lab5_2|S[0]                                                                             ; |lab5_2|S[0]                                                                             ; out              ;
-; |lab5_2|D2                                                                               ; |lab5_2|D2                                                                               ; out              ;
-; |lab5_2|D1                                                                               ; |lab5_2|D1                                                                               ; out              ;
-; |lab5_2|D0                                                                               ; |lab5_2|D0                                                                               ; out              ;
-; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10             ; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10             ; out0             ;
-; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12             ; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12             ; out0             ;
-; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; out0             ;
-; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; out0             ;
-; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; out0             ;
-; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; out0             ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10             ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10             ; out0             ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12             ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12             ; out0             ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; out0             ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; out0             ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; out0             ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10             ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10             ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12             ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12             ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~13             ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~14             ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~15             ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; out0             ;
+; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; combout          ;
+; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; combout          ;
+; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; combout          ;
+; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; combout          ;
+; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; combout          ;
+; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~1 ; combout          ;
+; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; |lab5_2|lpm_mux0:inst9|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|result_node[0]~0 ; combout          ;
+; |lab5_2|Q0                                                                               ; |lab5_2|Q0                                                                               ; padio            ;
+; |lab5_2|Q1                                                                               ; |lab5_2|Q1                                                                               ; padio            ;
+; |lab5_2|Q2                                                                               ; |lab5_2|Q2                                                                               ; padio            ;
+; |lab5_2|Q3                                                                               ; |lab5_2|Q3                                                                               ; padio            ;
+; |lab5_2|D0                                                                               ; |lab5_2|D0~corein                                                                        ; combout          ;
+; |lab5_2|S[0]                                                                             ; |lab5_2|S[0]~corein                                                                      ; combout          ;
+; |lab5_2|S[1]                                                                             ; |lab5_2|S[1]~corein                                                                      ; combout          ;
+; |lab5_2|clk                                                                              ; |lab5_2|clk~corein                                                                       ; combout          ;
+; |lab5_2|D1                                                                               ; |lab5_2|D1~corein                                                                        ; combout          ;
+; |lab5_2|D2                                                                               ; |lab5_2|D2~corein                                                                        ; combout          ;
+; |lab5_2|D3                                                                               ; |lab5_2|D3~corein                                                                        ; combout          ;
+; |lab5_2|clk~clkctrl                                                                      ; |lab5_2|clk~clkctrl                                                                      ; outclk           ;
 +------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 1 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 1-Value Coverage                                                                                                                                                       ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
-; Node Name                                                                    ; Output Port Name                                                             ; Output Port Type ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
-; |lab5_2|S[1]                                                                 ; |lab5_2|S[1]                                                                 ; out              ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10 ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12 ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; out0             ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 The following table displays output ports that do not toggle to 0 during simulation.
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                                                                                                                       ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
-; Node Name                                                                    ; Output Port Name                                                             ; Output Port Type ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
-; |lab5_2|S[1]                                                                 ; |lab5_2|S[1]                                                                 ; out              ;
-; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; |lab5_2|lpm_mux0:inst8|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; out0             ;
-; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; |lab5_2|lpm_mux0:inst7|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~10 ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~12 ; out0             ;
-; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; |lab5_2|lpm_mux0:inst6|lpm_mux:LPM_MUX_component|mux_33e:auto_generated|_~17 ; out0             ;
-+------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
 
 
 +---------------------+
@@ -192,19 +166,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Simulator
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sun Apr 11 10:21:53 2021
+    Info: Processing started: Sun Apr 18 16:09:29 2021
 Info: Command: quartus_sim --simulation_results_format=VWF lab5_2 -c lab5_2
 Info (324025): Using vector source file "Z:/GitHub/UzlyLabs/lab5_2/Waveform.vwf"
 Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info (310002): Simulation partitioned into 1 sub-simulations
-Info (328053): Simulation coverage is      85.71 %
-Info (328052): Number of transitions in simulation is 399
+Info (328053): Simulation coverage is     100.00 %
+Info (328052): Number of transitions in simulation is 178
 Info (324045): Vector file lab5_2.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
 Info: Quartus II 32-bit Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 261 megabytes
-    Info: Processing ended: Sun Apr 11 10:21:53 2021
-    Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Peak virtual memory: 274 megabytes
+    Info: Processing ended: Sun Apr 18 16:09:30 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

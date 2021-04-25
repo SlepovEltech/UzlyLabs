@@ -1,5 +1,5 @@
 Flow report for lab5
-Sat Apr 10 23:09:00 2021
+Sun Apr 18 14:48:53 2021
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sat Apr 10 23:09:00 2021           ;
+; Flow Status                        ; Successful - Sun Apr 18 14:48:53 2021           ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lab5                                            ;
 ; Top-level Entity Name              ; lab5                                            ;
@@ -64,29 +64,32 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/10/2021 23:06:12 ;
+; Start date & time ; 04/18/2021 14:48:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5                ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                              ;
-+-------------------------------------+------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 121372028379.161808517201068 ; --            ; --          ; --         ;
-; IP_TOOL_NAME                        ; LPM_CONSTANT                 ; --            ; --          ; --         ;
-; IP_TOOL_VERSION                     ; 13.0                         ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --         ;
-; MISC_FILE                           ; lpm_constant0.bsf            ; --            ; --          ; --         ;
-; MISC_FILE                           ; lpm_constant0.cmp            ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top        ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                 ; --            ; --          ; --         ;
-+-------------------------------------+------------------------------+---------------+-------------+------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                  ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                        ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 121372028379.161874651600412 ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                           ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)    ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_CONSTANT                 ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                         ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                           ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                            ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_constant0.bsf            ; --            ; --          ; --             ;
+; MISC_FILE                           ; lpm_constant0.cmp            ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                     ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING        ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                       ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                 ; --            ; --          ; --             ;
++-------------------------------------+------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,13 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 385 MB              ; 00:00:05                           ;
-; Fitter                    ; 00:00:12     ; 1.0                     ; 427 MB              ; 00:00:05                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 350 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 316 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 312 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 331 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:28     ; --                      ; --                  ; 00:00:14                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 372 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 405 MB              ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 336 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 302 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 309 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:13     ; --                      ; --                  ; 00:00:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -114,7 +116,6 @@ applicable agreement for further details.
 ; Assembler                 ; D653             ; Windows 7 ; 6.1        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; D653             ; Windows 7 ; 6.1        ; x86_64         ;
 ; EDA Netlist Writer        ; D653             ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; D653             ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -125,8 +126,7 @@ quartus_map --read_settings_files=on --write_settings_files=off lab5 -c lab5
 quartus_fit --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_asm --read_settings_files=off --write_settings_files=off lab5 -c lab5
 quartus_sta lab5 -c lab5
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog lab5 -c lab5 --vector_source=//Mac/Home/Desktop/lab5/lab5.vwf --testbench_file=./simulation/qsim/lab5.vt
-quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog lab5 -c lab5
+quartus_eda --read_settings_files=off --write_settings_files=off lab5 -c lab5
 
 
 

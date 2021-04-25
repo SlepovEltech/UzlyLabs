@@ -9,6 +9,7 @@ source_file = 1, Z:/GitHub/UzlyLabs/lab5_2/lpm_constant1.qip
 source_file = 1, Z:/GitHub/UzlyLabs/lab5_2/lpm_constant1.vhd
 source_file = 1, Z:/GitHub/UzlyLabs/lab5_2/lpm_constant2.qip
 source_file = 1, Z:/GitHub/UzlyLabs/lab5_2/lpm_constant2.vhd
+source_file = 1, Z:/GitHub/UzlyLabs/lab5_2/Waveform1.vwf
 source_file = 1, Z:/GitHub/UzlyLabs/lab5_2/db/lab5_2.cbx.xml
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd

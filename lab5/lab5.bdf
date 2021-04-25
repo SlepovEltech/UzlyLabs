@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 8 104 176 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "x1" (rect 5 0 17 12)(font "Arial" ))
+	(text "x1" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 8 152 176 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "x2" (rect 5 0 17 12)(font "Arial" ))
+	(text "x2" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 8 200 176 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "x3" (rect 5 0 17 12)(font "Arial" ))
+	(text "x3" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 8 248 176 264)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "x4" (rect 5 0 17 12)(font "Arial" ))
+	(text "x4" (rect 5 0 16 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 8 296 176 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "clk" (rect 5 0 20 12)(font "Arial" ))
+	(text "clk" (rect 5 0 19 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 576 96 752 112)
+	(rect 424 96 600 112)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q1" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 576 144 752 160)
+	(rect 424 144 600 160)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q2" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -133,7 +133,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 576 192 752 208)
+	(rect 424 192 600 208)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q3" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -149,7 +149,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 576 240 752 256)
+	(rect 424 240 600 256)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q4" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
